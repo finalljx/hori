@@ -1,0 +1,43 @@
+.login {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/login-bg.jpg);
+    background-size: 100% 100%;
+}
+.login > .container {
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+}
+.login > .container > form > h3 {
+    color: #c62222;
+    font-weight: bold;
+}
+.login > .container .content-box-wrapper {
+    padding: 20px;
+}
+.login > .container .content-box-wrapper .form-group {
+    padding: 0;
+    margin-bottom: 15px;
+}
+.login > .container .button-pane {
+    border-color: #ddd;
+    border-style: solid;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-width: 1px 0 0;
+    padding: 10px;
+    text-align: center;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.02);
+}
+.login .checkbox > .checker span {
+    color: #fff;
+}
+.login .button-pane .btn {
+    background: #c62222;
+    border-color: #c62222;
+    color: #fff;
+}
