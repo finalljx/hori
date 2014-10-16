@@ -37,13 +37,13 @@
                         <div class="tab-content">
                             <div class="tab-pane" toggleable active-class="active" default="active" id="Tab1" exclusion-group="myTabs">
                                 <ul class="list-group">
-                                    <li class="list-group-item" ng-repeat="item in news">
+                                    <li class="list-group-item" ng-repeat="item in notices">
                                         <span class="news-text" ng-bind="item.text"></span>
                                         <span class="news-date pull-right" ng-bind="item.date"></span>
                                     </li>
                                     <li class="list-group-item text-center">
                                         <a href="javascript:void(0)" ng-click="loadMore('notice', '通知通告')">
-                                    查看更多
+                                    加载更多
                                 </a>
                                     </li>
                                 </ul>

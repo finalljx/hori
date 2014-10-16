@@ -8,7 +8,7 @@
     </div>
 
     <div class="app-body">
-        <div hori-scroll>
+        <div hori-scroll on-bottom-refresh='refresh()' is-loading="isLoading">
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="item in news track by $index">
                     <span class="news-text" ng-bind="item.text"></span>
