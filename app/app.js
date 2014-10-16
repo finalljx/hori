@@ -18,13 +18,10 @@ angular.module('hori', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
                     templateUrl: "app/home/home.html",
                     controller: 'HomeCtrl'
                 })
-                .state('home.route1', {
-                    url: "/route1",
-                    template: "route1"
-                })
-                .state('home.route2', {
-                    url: "/route2",
-                    template: "route2"
+                .state('loadmore', {
+                    url: "/loadmore/:type/:name",
+                    templateUrl: "app/home/more.html",
+                    controller: 'MoreCtrl'
                 });
         }
     ]);

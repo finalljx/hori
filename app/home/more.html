@@ -1,0 +1,21 @@
+<div class="app">
+
+    <!-- Navbars -->
+    <div class="navbar navbar-app navbar-absolute-top">
+        <div class="navbar-brand navbar-brand-center">
+            <span ng-bind="title"></span>
+        </div>
+    </div>
+
+    <div class="app-body">
+        <div hori-scroll>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="item in news track by $index">
+                    <span class="news-text" ng-bind="item.text"></span>
+                    <span class="news-date pull-right" ng-bind="item.date"></span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
