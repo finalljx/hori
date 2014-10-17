@@ -11,16 +11,15 @@ angular.module('hori').controller('MoreCtrl', ['$scope', '$stateParams', '$timeo
         $scope.refresh = function(){
         	$scope.isLoading = true;
         	var tt = $timeout(function(){
-        		Array.prototype.push.apply($scope.news, news); 
+        		for(var i=0; i<4; i++){
+        			$scope.news.push({text: '新闻', date: '10-17'});
+        		}
         		$scope.isLoading = false;
-        	}, 1500);
+        		$timeout.cancel(tt);
+        	}, 2500);
         }
 
-        $scope.news = news;
-
-        $scope.$on('$destroy', function(){
-    		$timeout.cancel(tt);
-        });
+        $scope.news = angular.copy(news);
 
         Array.prototype.push.apply($scope.news, news); 
         Array.prototype.push.apply($scope.news, news);

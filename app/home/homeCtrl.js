@@ -2,11 +2,12 @@
 
 angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService',
     function($scope, $state, dataService) {
-
+        var news = dataService.getNews(),
+            notices = dataService.getNotices();
         $scope.title = 'home';
 
-        $scope.news = dataService.getNews();
-        $scope.notices = dataService.getNews();
+        $scope.news = angular.copy(news);
+        $scope.notices = angular.copy(notices);
 
         $scope.loadMore = function(type, name) {
             if (type == 'news') {
@@ -16,7 +17,7 @@ angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService'
                 });
             }
             else{
-                Array.prototype.push.apply($scope.notices, dataService.getNews());
+                Array.prototype.push.apply($scope.notices, notices);
             }
 
         };
