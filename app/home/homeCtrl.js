@@ -8,18 +8,30 @@ angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService'
 
         $scope.news = angular.copy(news);
         $scope.notices = angular.copy(notices);
+        $scope.images = dataService.getImagesNews();
+
+        $scope.loadContact = function(type, name) {
+            $state.go('loadContact');
+        };
 
         $scope.loadMore = function(type, name) {
-            if (type == 'news') {
-                $state.go('loadmore', {
-                    type: type,
-                    name: name
-                });
-            }
-            else{
-                Array.prototype.push.apply($scope.notices, notices);
-            }
-
+            Array.prototype.push.apply($scope.notices, notices);
         };
+
+        $scope.showMore = function(type, name) {
+            $state.go('loadmore', {
+                type: type,
+                name: name
+            });
+        };
+
+        $scope.loadDetail = function(type, name, news) {
+            $state.go('loadDetail', {
+                type: type,
+                name: name,
+                news:news 
+            });
+        }
+
     }
 ]);

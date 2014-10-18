@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('hori', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'mobile-angular-ui'])
+angular.module('hori', ['ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'mobile-angular-ui'])
     .config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
 
@@ -19,9 +19,19 @@ angular.module('hori', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
                     controller: 'HomeCtrl'
                 })
                 .state('loadmore', {
-                    url: "/loadmore/:type/:name",
+                    url: "/more/:type/:name",
                     templateUrl: "app/home/more.html",
                     controller: 'MoreCtrl'
+                })
+                .state('loadDetail', {
+                    url: "/detail/:type/:name",
+                    templateUrl: "app/home/detail.html",
+                    controller: 'MoreCtrl'
+                })
+                .state('loadContact', {
+                    url: "/contact",
+                    templateUrl: "app/home/contact.html",
+                    controller: 'ContactCtrl'
                 });
         }
     ]);
