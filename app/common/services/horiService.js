@@ -11,7 +11,7 @@ angular.module('hori').factory('horiService',['configService',function(config){
 
     //全局变量，手机返回时调用
     cherry = new Object();
-
+    var horiService;
     // _init()中调用不同平台的function 做相应的初始化_cherryIos和_cherryAndroid
     // var cherry;
     var self=this;
@@ -551,8 +551,8 @@ angular.module('hori').factory('horiService',['configService',function(config){
 
         cherry=_bridge;
         cherry.bridge=_bridge;
-
+        horiService=_bridge;
 
     })();
-         return _bridge
+         return horiService;
 }])

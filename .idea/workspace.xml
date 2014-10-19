@@ -2,23 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb99390-5fbc-464d-ae3c-e2b5af526db0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/common/services/configService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/common/services/deviceService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/common/services/horiService.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/common/directives/hori-slide.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/services/dataService.js" afterPath="$PROJECT_DIR$/app/common/services/dataService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/services/deviceService.js" afterPath="$PROJECT_DIR$/app/common/services/deviceService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.html" afterPath="$PROJECT_DIR$/app/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/homeCtrl.js" afterPath="$PROJECT_DIR$/app/home/homeCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hori.iml" afterPath="$PROJECT_DIR$/.idea/hori.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/common/services/horiService.js" afterPath="$PROJECT_DIR$/app/common/services/horiService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login/login.html" afterPath="$PROJECT_DIR$/app/login/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login/loginCtrl.js" afterPath="$PROJECT_DIR$/app/login/loginCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/more.html" afterPath="$PROJECT_DIR$/app/home/more.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/moreCtrl.js" afterPath="$PROJECT_DIR$/app/home/moreCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hori.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413614631628" ignored="false" />
+    <file path="/Dummy.txt" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413714002691" ignored="false" />
     <file path="$PROJECT_DIR$/../angular/mobile-angular-ui/demo/service.html" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413106727790" ignored="false" />
     <file path="/service.html" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413106509118" ignored="false" />
     <file path="$USER_HOME$/WebstormProjects/angular/angular-1.2.26/docs/examples/example-example/index.html" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413332658669" ignored="false" />
     <file path="/index.html" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413623621695" ignored="false" />
-    <file path="/deviceService.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413622370759" ignored="false" />
-    <file path="/horiService.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413617444995" ignored="false" />
+    <file path="/deviceService.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413708079946" ignored="false" />
+    <file path="/horiService.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413704957131" ignored="false" />
     <file path="/configService.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413622032056" ignored="false" />
-    <file path="/a.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413621085365" ignored="false" />
+    <file path="/a.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413709963278" ignored="false" />
     <file path="/a.dummy" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413622116252" ignored="false" />
+    <file path="/loginCtrl.js" changelist="5eb99390-5fbc-464d-ae3c-e2b5af526db0" time="1413707301676" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,107 +49,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="53" selection-start="821" selection-end="821" vertical-scroll-proportion="-5.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginCtrl.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/login/loginCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="44" selection-start="50" selection-end="59" vertical-scroll-proportion="0.046511628">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/login/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="72" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-1.74">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="508" selection-end="517" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deviceService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/services/deviceService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="76" selection-start="10639" selection-end="10639" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#651#6909#0" expanded="false" />
-                <element signature="e#6973#8103#0" expanded="false" />
-                <element signature="e#8241#8852#0" expanded="false" />
-                <element signature="e#8897#9216#0" expanded="false" />
-                <element signature="e#9260#9608#0" expanded="false" />
-                <element signature="e#9659#10408#0" expanded="false" />
-                <element signature="e#10453#10639#0" expanded="false" />
-                <element signature="e#10690#10946#0" expanded="false" />
-                <element signature="e#10990#11189#0" expanded="false" />
-                <element signature="e#11243#12074#0" expanded="false" />
-                <element signature="e#12130#13134#0" expanded="false" />
-                <element signature="e#13173#15265#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hori.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../wumei/viewhome/lib/hori/hori.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="872" column="39" selection-start="20386" selection-end="22278" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#107#225#0" expanded="false" />
-                <element signature="e#573#5170#0" expanded="false" />
-                <element signature="e#7125#7399#0" expanded="false" />
-                <element signature="e#10730#13699#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="horiService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/services/horiService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="200" selection-end="200" vertical-scroll-proportion="-4.6153846">
-              <folding>
-                <element signature="e#7184#7452#0" expanded="false" />
-                <element signature="e#7516#7870#0" expanded="false" />
-                <element signature="e#7927#8237#0" expanded="false" />
-                <element signature="e#8292#8436#0" expanded="false" />
-                <element signature="e#8480#8853#0" expanded="false" />
-                <element signature="e#13911#17595#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/services/configService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="286" selection-end="298" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/common/services/dataService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+            <state line="35" column="28" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.49438202">
               <folding />
             </state>
           </provider>
@@ -164,9 +78,11 @@
       <list>
         <option value="$PROJECT_DIR$/../../wumei/viewhome/lib/hori/hori.js" />
         <option value="$PROJECT_DIR$/app/common/services/configService.js" />
-        <option value="$PROJECT_DIR$/app/common/services/deviceService.js" />
-        <option value="$PROJECT_DIR$/app/common/services/horiService.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/common/services/horiService.js" />
+        <option value="$PROJECT_DIR$/app/login/loginCtrl.js" />
+        <option value="$PROJECT_DIR$/app/common/services/deviceService.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -202,7 +118,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,89 +126,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hori" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+        <subPane subId="All" />
       </pane>
     </panes>
   </component>
@@ -301,10 +138,10 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wumei/viewhome/lib/hori/hori.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -313,6 +150,13 @@
       <option name="filePath" />
       <option name="scope" value="ALL" />
       <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -343,15 +187,34 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982105" sideWeight="0.6701337" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838038" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982105" sideWeight="0.6701337" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982105" sideWeight="0.6716196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -360,6 +223,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -426,6 +290,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/common/services/horiService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/services/configService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="286" selection-end="298" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/services/dataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -449,88 +328,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/services/dataService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../wumei/viewhome/lib/hori/hori.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="872" column="39" selection-start="20386" selection-end="22278" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#107#225#0" expanded="false" />
-            <element signature="e#573#5170#0" expanded="false" />
-            <element signature="e#7125#7399#0" expanded="false" />
-            <element signature="e#10730#13699#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/services/horiService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="200" selection-end="200" vertical-scroll-proportion="-4.6153846">
-          <folding>
-            <element signature="e#7184#7452#0" expanded="false" />
-            <element signature="e#7516#7870#0" expanded="false" />
-            <element signature="e#7927#8237#0" expanded="false" />
-            <element signature="e#8292#8436#0" expanded="false" />
-            <element signature="e#8480#8853#0" expanded="false" />
-            <element signature="e#13911#17595#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/services/deviceService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="76" selection-start="10639" selection-end="10639" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#651#6909#0" expanded="false" />
-            <element signature="e#6973#8103#0" expanded="false" />
-            <element signature="e#8241#8852#0" expanded="false" />
-            <element signature="e#8897#9216#0" expanded="false" />
-            <element signature="e#9260#9608#0" expanded="false" />
-            <element signature="e#9659#10408#0" expanded="false" />
-            <element signature="e#10453#10639#0" expanded="false" />
-            <element signature="e#10690#10946#0" expanded="false" />
-            <element signature="e#10990#11189#0" expanded="false" />
-            <element signature="e#11243#12074#0" expanded="false" />
-            <element signature="e#12130#13134#0" expanded="false" />
-            <element signature="e#13173#15265#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="62" column="64" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/services/configService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="286" selection-end="298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="53" selection-start="821" selection-end="821" vertical-scroll-proportion="-5.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="508" selection-end="517" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="72" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-1.74">
+        <state line="45" column="76" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="42" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../wumei/viewhome/lib/hori/hori.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="872" column="39" selection-start="20386" selection-end="22278" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/services/horiService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="42" selection-start="7010" selection-end="7010" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="46" selection-start="2457" selection-end="2457" vertical-scroll-proportion="6.9148936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/services/deviceService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="51" selection-start="8703" selection-end="8703" vertical-scroll-proportion="1.2919708">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/login/loginCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="50" selection-end="59" vertical-scroll-proportion="0.046511628">
+        <state line="9" column="28" selection-start="391" selection-end="391" vertical-scroll-proportion="0.31839624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="28" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.49438202">
           <folding />
         </state>
       </provider>

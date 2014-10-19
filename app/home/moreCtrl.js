@@ -1,28 +1,39 @@
 'use strict';
 
-angular.module('hori').controller('MoreCtrl', ['$scope', '$stateParams', '$timeout', 'dataService',
-    function($scope, $stateParams, $timeout, dataService) {
+angular.module('hori').controller('MoreCtrl', ['$scope', '$state', '$stateParams', '$timeout', 'dataService',
+    function($scope, $state, $stateParams, $timeout, dataService) {
 
-    	var news = dataService.getNews();
+        var name = $stateParams.name,
+            type = $stateParams.type;
 
-        $scope.title = $stateParams.name;
+        $scope.title = name;
         $scope.isLoading = false;
+        $scope.news = [];
 
         $scope.refresh = function(){
         	$scope.isLoading = true;
         	var tt = $timeout(function(){
         		for(var i=0; i<4; i++){
-        			$scope.news.push({text: '新闻', date: '10-17'});
+        			$scope.news.push({text:name, date: '10-17'});
         		}
         		$scope.isLoading = false;
         		$timeout.cancel(tt);
         	}, 2500);
+        };
+
+        $scope.loadDetail = function(news) {
+
+            $state.go('loadDetail', {
+                type: type,
+                name: name,
+                news:news 
+            });
+
         }
 
-        $scope.news = angular.copy(news);
+        for(var i=0; i<16; i++) {
+            $scope.news.push({text: name, date: '10-17'});
+        }
 
-        Array.prototype.push.apply($scope.news, news); 
-        Array.prototype.push.apply($scope.news, news);
-        Array.prototype.push.apply($scope.news, news);
     }
 ]);

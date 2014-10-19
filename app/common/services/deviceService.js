@@ -5,7 +5,7 @@
  * Time: 下午2:47
  * To change this template use File | Settings | File Templates.
  */
- angular.module('hori').factory('deviceService',['$http,$location,$q,configService,horiService',function($http,$location,$q,config,horiService){
+ angular.module('hori').factory('deviceService',['$http','$location','$q','configService','horiService',function($http,$location,$q,config,horiService){
 
      var returnService={};
 
@@ -214,7 +214,7 @@
              horiService.flushOperations();
          }else{
              if (config.browserDebug) {
-                 $loaction.url(targetUrl);
+                 $location.url(targetUrl);
                  return;
              }
          }
