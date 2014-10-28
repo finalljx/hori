@@ -31,7 +31,11 @@ angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService'
                 name: name,
                 news:news 
             });
-        }
+        };
+
+        $scope.logout = function(){
+            $state.go('login');
+        };
 
     }
 ]);

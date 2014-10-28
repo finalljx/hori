@@ -26,7 +26,7 @@ angular.module('hori', ['ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'mobi
                 .state('loadDetail', {
                     url: "/detail/:type/:name",
                     templateUrl: "app/home/detail.html",
-                    controller: 'MoreCtrl'
+                    controller: 'DetailCtrl'
                 })
                 .state('loadContact', {
                     url: "/contact",
@@ -34,4 +34,11 @@ angular.module('hori', ['ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'mobi
                     controller: 'ContactCtrl'
                 });
         }
-    ]);
+    ])
+    .run(['$rootScope', 'HistoryService',
+        function($rootScope, HistoryService) {
+            $rootScope.$on("$stateChangeSuccess", function(event, toState, toParams, fromState, fromParams) {
+                HistoryService.stateChange(toState.name, fromState.name, toParams);
+            });
+        }
+    ]);;
