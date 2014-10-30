@@ -420,8 +420,11 @@
          if(config.browserDebug){
 
             return $http({
+				headers: {
+					"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
+				},
                  url:args.url,
-                 data:args.data,
+				 data: args.data,
                  method:(args.type).toUpperCase()
 
              });

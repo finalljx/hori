@@ -18,6 +18,6 @@ angular.module('hori').factory('configService', [function () {
 			oaMobileServer:"V7dev/DigiWin",
 			serverBaseUrl:"http://localhost:8080/",
 			encryptKey:"horiTech",
-			appServerHost:"http://10.211.55.4:8080/"
+			appServerHost:"http://localhost:8080/"
      }
 }]);
