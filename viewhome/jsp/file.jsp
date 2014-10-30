@@ -57,11 +57,7 @@
 				total=q.getPageSize();
 				
 				json.put("total",total);
-				if(request.getQueryString()==null){
-					json.put("path",path);
-				}else{
-					json.put("path",path+"&"+request.getQueryString());
-				}
+				json.put("path",path);
 				json.put("type",attacheType);
 				json.put("content",content);
 				out.clear();

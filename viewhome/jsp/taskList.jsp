@@ -34,7 +34,6 @@
 		todsNumber = doc.selectSingleNode(
 				"//viewentries/@toplevelentries").getStringValue();
 		List todosList = doc.selectNodes("//viewentry");
-		System.out.println(todosList.size()+"=======================");
 		for (Iterator i = todosList.iterator(); i.hasNext();) {
 			Element todoInfo = (Element) i.next();
 			JSONObject json = new JSONObject();

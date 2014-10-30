@@ -12,6 +12,12 @@ angular.module('hori').factory('configService', [function () {
          mobileDebug:false,
          timeOutAlertStr:"请求服务器超时，请检查网络",
          // 默认ajax超时时间，单位毫秒
-         timeout:20000
+         timeout:20000,
+		 oaServerName:"V7dev/DigiWin",
+		oaMsgServer:"V7dev/DigiWin",
+			oaMobileServer:"V7dev/DigiWin",
+			serverBaseUrl:"http://localhost:8080/",
+			encryptKey:"horiTech",
+			appServerHost:"http://10.211.55.4:8080/"
      }
 }]);

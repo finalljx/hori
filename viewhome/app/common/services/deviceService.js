@@ -402,6 +402,7 @@
              alert("参数URL是必须参数请输入");
              return ;
          }
+		 /*
          if(typeof(args["success"])=="undefined" || !($.isFunction(args["success"]))){
              alert("参数success是必须参数，只能是函数");
              return ;
@@ -410,17 +411,18 @@
              alert("参数error 是必须参数,只能是函数");
              return ;
          }
-         var method=args.method;
+		 */
+         var method=args.type;
          var url=args.url;
          var data=args.data;
          var success=args.success;
          var error=args.error;
          if(config.browserDebug){
 
-             $http({
+            return $http({
                  url:args.url,
                  data:args.data,
-                 method:(args.method).toUpperCase()
+                 method:(args.type).toUpperCase()
 
              });
          }else{
@@ -448,7 +450,7 @@
                  horiServiceScript.addDependency(requestDataOpration);
                  horiServiceScript.dispatch();
                  horiService.flushOperations();
-
+				return deffer;
              }
          }
 
