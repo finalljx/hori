@@ -21,7 +21,7 @@ angular.module('hori').controller('NewsCtrl', ['$scope', '$state', 'dataService'
         };
 
         $scope.loadDetail = function(news) {
-            $state.go('loadDetail');
+            $state.go('modules/news/detail');
         }
 
         query();

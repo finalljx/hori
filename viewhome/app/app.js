@@ -24,6 +24,11 @@ angular.module('hori', ['ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'mobi
                     templateUrl: "app/modules/news.html",
                     controller: 'NewsCtrl'
                 })
+                .state('modules/news/detail', {
+                    url: "/modules/news/detail",
+                    templateUrl: "app/modules/newsDetail.html",
+                    controller: 'NewsDetailCtrl'
+                })
                 .state('modules/todos', {
                     url: "/modules/todos",
                     templateUrl: "app/modules/todos.html",

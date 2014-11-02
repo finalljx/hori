@@ -12,17 +12,15 @@
     </div>
 
     <div class="app-body">
-        <div class="app-content">
-            <div class="scrollable">
-                <div class="scrollable-content">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">title</h3>
-                        </div>
-                        <div class="panel-body">
-                        content
-                        </div>
-                    </div>
+        <div hori-scroll>
+            <div class="panel panel-default">
+                <h3 class="text-center" ng-bind="news.title"></h3>
+                <div class="text-center" ng-bind-html="news.source"></div>
+                <div class="text-justify" ng-bind-html="news.content"></div>
+                <div>
+                    <span ng-repeat="item in news.files">
+                        <a href="javascript: void(0)" ng-bind="item.text"></a>
+                    </span>
                 </div>
             </div>
         </div>

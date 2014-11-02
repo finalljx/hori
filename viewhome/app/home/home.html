@@ -19,7 +19,7 @@
                     <div hori-slider-box style="height: 100%;" auto-play="true" interval='4000'>
                         <div hori-slider ng-repeat="image in images track by $index">
                             <a href="javascript:void(0)" style="color: #fff;">
-                                <img class="img-responsive" style="height: 100%" src="{{image.url}}" />
+                                <img class="img-responsive" style="height: 100%" ng-src="{{image.url}}" />
                                 <h5 style="position: absolute; bottom: 0; left: 5px;">{{image.title}}{{$index}}</h5>
                             </a>
                         </div>
@@ -40,29 +40,28 @@
 
                 <div>
                     <div class="btn-group justified nav-tabs">
-                        <a class="btn btn-default active" href="#Tab1" toggle="on" active-class="active">通知通告</a>
-
-                        <a class="btn btn-default" href="#Tab2" toggle="on" active-class="active">集团新闻</a>
+                        <a class="btn btn-default active" href="#Tab1" toggle="on" active-class="active">集团新闻</a>
+                        <a class="btn btn-default" href="#Tab2" toggle="on" active-class="active">通知通告</a>
                     </div>
 
                     <div class="tab-content">
                         <div class="tab-pane" toggleable active-class="active" default="active" id="Tab1" exclusion-group="myTabs">
+                            <div class="list-group">
+                                <a href="javascript:void(0)" class="list-group-item" ng-click="loadNewsDetail('news','集团新闻', item)" ng-repeat="item in news track by $index">
+                                    <span class="news-text">{{item.title}}{{$index}}</span>
+                                    <span class="news-date pull-right" ng-bind="item.date"></span>
+                                </a>
+                                <a href="javascript:void(0)" class="list-group-item text-center" ng-click="loadModule('news')">查看更多</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" toggleable active-class="active" id="Tab2" exclusion-group="myTabs">
                             <div class="list-group">
                                 <a href="javascript:void(0)" class="list-group-item" ng-click="loadDetail('notice', '通知通告', item)" ng-repeat="item in notices track by $index">
                                     <span class="news-text">{{item.title}}{{$index}}</span>
                                     <span class="news-date pull-right" ng-bind="item.date"></span>
                                 </a>
                                 <a href="javascript:void(0)" class="list-group-item text-center" ng-click="loadModule('notices')">查看更多</a>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" toggleable active-class="active" id="Tab2" exclusion-group="myTabs">
-                            <div class="list-group">
-                                <a href="javascript:void(0)" class="list-group-item" ng-click="loadDetail('news','集团新闻', item)" ng-repeat="item in news track by $index">
-                                    <span class="news-text">{{item.title}}{{$index}}</span>
-                                    <span class="news-date pull-right" ng-bind="item.date"></span>
-                                </a>
-                                <a href="javascript:void(0)" class="list-group-item text-center" ng-click="loadModule('news')">查看更多</a>
                             </div>
                         </div>
                     </div>

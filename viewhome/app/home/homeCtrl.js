@@ -22,13 +22,21 @@ angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService'
             });
         };
 
+        $scope.loadNewsDetail = function(type, name, news) {
+            $state.go('modules/news/detail', {
+                type: type,
+                name: name,
+                news:news 
+            });
+        };
+
         $scope.logout = function(){
             $state.go('login');
         };
 
 
         //获取企业信息
-        dataService.getNews({start: 1, count: 4}).then(function(result){
+        dataService.getNews({start: 1, count: 5}).then(function(result){
              Array.prototype.push.apply($scope.news, result.data.newslist);
         });
 
