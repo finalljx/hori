@@ -182,6 +182,22 @@
          return o;
      }
 
+     /*
+      * @description: 将json对象转化为query string
+      * @param obj json对象
+      */
+     function json2param(obj) {
+        var buf = [], val,
+            key, e = encodeURIComponent;
+
+        for (key in obj) {
+            val = obj [key];
+            buf.push(e(key) + "=" + (val!==undefined ? e(val) : ""));
+        }
+
+        return buf.join('&');
+    };
+
      returnService.loadPage=function(targetUrl,componetXmlUrl){
 
          /*
@@ -418,16 +434,16 @@
          var success=args.success;
          var error=args.error;
          if(config.browserDebug){
-
+            data = angular.isObject(data) ? json2param(data) : data;
             return $http({
-				headers: {
-					"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
-				},
-                 url:args.url,
-				 data: args.data,
-                 method:(args.type).toUpperCase()
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                url: args.url,
+                data: data,
+                method: (args.type).toUpperCase()
+            });
 
-             });
          }else{
              if(angular.isFunction(success)){
 

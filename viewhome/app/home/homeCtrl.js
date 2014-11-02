@@ -2,27 +2,16 @@
 
 angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService',
     function($scope, $state, dataService) {
-        var news = dataService.getNews(),
-            notices = dataService.getNotices();
+        var notices = dataService.getNotices();
         $scope.title = 'home';
 
-        $scope.news = angular.copy(news);
+        $scope.news = [];
+        $scope.unreadsNum = 0; 
         $scope.notices = angular.copy(notices);
         $scope.images = dataService.getImagesNews();
 
-        $scope.loadContact = function(type, name) {
-            $state.go('loadContact');
-        };
-
-        $scope.loadMore = function(type, name) {
-            Array.prototype.push.apply($scope.notices, notices);
-        };
-
-        $scope.showMore = function(type, name) {
-            $state.go('loadmore', {
-                type: type,
-                name: name
-            });
+        $scope.loadModule = function(module) {
+            $state.go('modules/' + module);
         };
 
         $scope.loadDetail = function(type, name, news) {
@@ -36,6 +25,19 @@ angular.module('hori').controller('HomeCtrl', ['$scope', '$state', 'dataService'
         $scope.logout = function(){
             $state.go('login');
         };
+
+
+        //获取企业信息
+        dataService.getNews({start: 1, count: 4}).then(function(result){
+             Array.prototype.push.apply($scope.news, result.data.newslist);
+        });
+
+        //获取未读消息条数
+        dataService.getUnreadsNum().then(function(result){
+            if(result && result.data && result.data.number){
+                $scope.unreadsNum = result.data.number;
+            }
+        });
 
     }
 ]);
