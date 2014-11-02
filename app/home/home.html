@@ -1,0 +1,81 @@
+<div class="app">
+
+    <!-- Navbars -->
+    <div class="navbar navbar-app navbar-absolute-top">
+        <div class="navbar-brand navbar-brand-center">
+            <span>首 页</span>
+        </div>
+    </div>
+
+    <div class="app-body">
+        <div class="app-content">
+            <div class="scrollable">
+                <div class="scrollable-content">
+                    <div>
+                        <div class="well" style="height:200px; margin-top: 20px; padding:0; color: #fff">
+                            <div hori-slider-box style="height: 100%;" auto-play="true" interval='4000'>
+                                <div hori-slider ng-repeat="image in images track by $index">
+                                    <a href="javascript:void(0)" style="color: #fff;">
+                                        <img class="img-responsive" style="height: 100%" src="{{image.url}}" />
+                                        <h5 style="position: absolute; bottom: 0; left: 5px;">
+                                            {{image.text}}{{$index}}
+                                        </h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="well" style="padding: 10px 5px;">
+                            <div style="margin: 0 auto">
+                                <a href="javascript:void(0)" class="btn" ng-click="showMore('todo','待办事宜')">待办事宜</a>
+                                <a href="javascript:void(0)" class="btn" ng-click="showMore('unread','未读消息')">未读消息</a>
+                                <a href="javascript:void(0)" class="btn" ng-click="showMore('news','企业新闻')">企业新闻</a>
+                                <a href="javascript:void(0)" class="btn" ng-click="loadContact()">电话查询</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="btn-group justified nav-tabs">
+                            <a class="btn btn-default" href="#Tab1" toggle="on" active-class="active">
+                        通知通告
+                    </a>
+
+                            <a class="btn btn-default" href="#Tab2" toggle="on" active-class="active">
+                        集团新闻
+                    </a>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane" toggleable active-class="active" default="active" id="Tab1" exclusion-group="myTabs">
+                                <div class="list-group">
+                                    <a href="javascript:void(0)" class="list-group-item" ng-click="loadDetail('notice', '通知通告', item)" ng-repeat="item in notices track by $index">
+                                        <span class="news-text">{{item.text}}{{$index}}</span>
+                                        <span class="news-date pull-right" ng-bind="item.date"></span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item text-center" ng-click="loadMore('notice', '通知通告')">
+                                    加载更多
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" toggleable active-class="active" id="Tab2" exclusion-group="myTabs">
+                                <div class="list-group">
+                                    <a href="javascript:void(0)" class="list-group-item" ng-click="loadDetail('news','集团新闻', item)" ng-repeat="item in news track by $index">
+                                        <span class="news-text">{{item.text}}{{$index}}</span>
+                                        <span class="news-date pull-right" ng-bind="item.date"></span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item text-center" ng-click="showMore('news','集团新闻')">
+                                    查看更多
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
