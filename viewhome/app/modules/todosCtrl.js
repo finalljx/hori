@@ -10,7 +10,7 @@ angular.module('hori').controller('TodosCtrl', ['$scope', '$state', 'dataService
             $scope.isLoading = true;
             dataService.getTodos().then(function(result) {
                 $scope.isLoading = false;
-                Array.prototype.push.apply($scope.list, result.data.taskslist);
+                Array.prototype.push.apply($scope.list, result.data.tasklist);
             }, function(data) {
                 $scope.isLoading = false;
             });

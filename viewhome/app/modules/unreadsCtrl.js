@@ -10,7 +10,7 @@ angular.module('hori').controller('UnreadsCtrl', ['$scope', '$state', 'dataServi
             $scope.isLoading = true;
             dataService.getUnreads().then(function(result) {
                 $scope.isLoading = false;
-                Array.prototype.push.apply($scope.list, result.data.newslist);
+                Array.prototype.push.apply($scope.list, result.data.tasklist);
             }, function(data) {
                 $scope.isLoading = false;
             });

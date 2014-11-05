@@ -79,7 +79,7 @@ angular.module('hori').service('dataService', ['configService', 'deviceService',
 
         try {
             url = configService.appServerHost + 'view/oamobile/todosmobile/Produce/DigiFlowMobile.nsf/agGetMsgViewData?openagent&login&server=' + oaMsgServer + '&dbpath=DFMessage/dfmsg_' + itcode + '.nsf&view=vwTaskUnDoneForMobile&thclass=';
-            url = url + '&start=' + start + '&count=' + count;
+            url = url + '&start=' + start + '&count=' + count+"&page=1";
         } catch (e) {
 
         }
@@ -113,7 +113,7 @@ angular.module('hori').service('dataService', ['configService', 'deviceService',
 
         try {
             url = configService.appServerHost + 'view/oamobile/messagelist/Produce/DigiFlowMobile.nsf/agGetMsgViewData?openagent&login&server=' + oaMsgServer + '&dbpath=DFMessage/dfmsg_' + itcode + '.nsf&view=vwMsgUnRdForMobile&thclass=';
-            url = url + '&start=' + start + '&count=' + count;
+            url = url + '&start=' + start + '&count=' + count+"&page=1";
         } catch (e) {
 
         }
