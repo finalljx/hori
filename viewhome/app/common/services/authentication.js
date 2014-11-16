@@ -38,11 +38,13 @@ angular.module('hori').service('authentication', ['configService', 'deviceServic
             "data": data
         })
 
+
         promise.then(function(result) {
             if (result && result.data && result.data.success) {
                 global.setItcode(result.data.itcode);
             }
         });
+
 
         return promise;
     };

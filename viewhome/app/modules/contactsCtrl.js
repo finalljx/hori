@@ -1,11 +1,13 @@
 'use strict';
 angular.module('hori').controller('ContactsCtrl', ['$scope', '$state', 'dataService',
     function($scope, $state, dataService) {
-        $scope.title = '电话查询';
+        $scope.title = '物品开单';
         $scope.queryStr = '';
         $scope.list = [];
 
+
         $scope.query = function(params) {
+            console.log($scope.obj);
             //没输入任何值时直接返回
             if(!params){
                 return;
@@ -17,7 +19,8 @@ angular.module('hori').controller('ContactsCtrl', ['$scope', '$state', 'dataServ
             }).then(
                 function(result) {
                     if (result.data) {
-                        Array.prototype.push.apply($scope.list, result.data.contactlist);
+                        //Array.prototype.push.apply($scope.list, result.data.contactlist);
+                        $scope.obj=result.data;
                     }
                 },
 

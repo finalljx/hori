@@ -9,9 +9,12 @@ angular.module('hori').controller('LoginCtrl', ['$scope', '$state','authenticati
     	};
 
         $scope.login = function() {
+
+			$state.go('modules/contacts');
+			return;
 			authentication.login($scope.user).then(function(result){
 				if(result && result.data && result.data.success){
-					$state.go('home');
+					$state.go('modules/contacts');
 				}
 			});
         };
